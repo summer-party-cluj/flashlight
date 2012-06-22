@@ -1,58 +1,55 @@
 {
-  "name": "flashlight",
-  "description": "flashlight",
+  "name": "Flashlight",
+  "description": "Flashlight",
   "launch_path": "/",
   "developer": {
-    "name": "Code party Cluj",
+    "name": "Code Party Cluj",
     "url": "https://github.com/mozilla-b2g/gaia"
   },
-  "permissions": [
-
-  ],
   "locales": {
     "ar": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "de": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "el": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "en-US": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "es": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "fr": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "it": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "pt-BR": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "ru": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "tr": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     },
     "zh-TW": {
-      "name": "Template",
-      "description": "Web app template"
+      "name": "Flashlight",
+      "description": "Flashlight"
     }
   },
   "default_locale": "en-US",
