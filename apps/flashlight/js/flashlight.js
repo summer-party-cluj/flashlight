@@ -1,6 +1,7 @@
 var flashlightAvailable = true,
     flashlightUnavailableMsgs = [],
     flashlightOn = false;
+
 /**
  * @description Check battery level
  */
@@ -9,10 +10,10 @@ function checkBatteryLevel() {
     if ((!window.navigator.mozBattery.charging) && (navigator.mozBattery.level < 0.1)) {
       flashlightAvailable = false;
       flashlightUnavailableMsgs.push("Battery too low");
-      //WindowManager.kill(origin);
     }
   }
 }
+
 /**
  * @description Test availability of flashlight required resources
  */
@@ -30,6 +31,7 @@ function testFlashlightResources() {
     flashlightUnavailableMsgs.push(unavailableResourceMsg);
   }
 }
+
 /**
  * @description Activate flashlight
  */
@@ -41,6 +43,7 @@ function showFlashlight() {
     navigator.mozCamera.setParameter("flash-mode", "off");
   }
 }
+
 /**
  * @description function executed when flashlight button is clicked
  */
@@ -54,16 +57,18 @@ function flashlightButtonClick() {
     alert(flashlightUnavailableMsg);
   }
 }
+
 /**
  * @description Attach events
  */
 function delegate() {
   var flashlightButtonEl;
-  flashlightButtonEl = document.getElementById("flashlightButton");
+  flashlightButtonEl = document.getElementById("flashlight-button");
   if (flashlightButtonEl) {
     flashlightButtonEl.addEventListener("click", flashlightButtonClick, false);
   }
 }
+
 /**
  * @description Executed automatically
  */
@@ -72,5 +77,7 @@ function init() {
   testFlashlightResources();
   delegate();
 }
+
 //initialize
 window.addEventListener("DOMContentLoaded", function () {init(); });
+
