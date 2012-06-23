@@ -1,0 +1,4 @@
+function checkBatteryLevel(){
+  if ((!window.navigator.mozBattery.charging)&&(navigator.mozBattery.level < 0.1))
+    WindowManager.kill(origin);
+}

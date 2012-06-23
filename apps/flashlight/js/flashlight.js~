@@ -1,0 +1,18 @@
+var flashlightAvailable = true;
+
+function checkBatteryLevel(){
+  if (navigator && navigator.mozBatery) {
+    if ((!window.navigator.mozBattery.charging) && (navigator.mozBattery.level < 0.1)) {
+      flashlightAvailable = false;
+      //WindowManager.kill(origin);
+    }
+  }
+}
+/**
+ * @description Executed automatically
+ */
+function init() {
+  checkBatteryLevel();
+}
+
+init();
