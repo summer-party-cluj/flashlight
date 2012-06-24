@@ -1,6 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  background: -moz-linear-gradient(top, #1b0a1d, #0c0310);
+}
+
 .button {
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-    background: #F00;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 7px 7px 7px 7px;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+  position: relative;
+  top: 160px;
+}
+
+#slider {
+  background-color: #FFFFFF;
+  border-radius: 3px 3px 3px 3px;
+  height: 15px;
+  margin: 0 auto;
+  position: relative;
+  top: 175px;
+  width: 120px;
+}
+
+#slider-button {
+  background-color: #AAAAAA;
+  border-radius: 2px 2px 2px 2px;
+  height: 25px;
+  left: 105px;
+  position: relative;
+  top: -5px;
+  width: 10px;
+}
+
+.off {
+  background-image: url("../resources/off.png");
+  background-size: 65px 75px;
+  height: 75px;
+  left: 17px;
+  position: relative;
+  top: 15px;
+  width: 65px;
+}
+
+.on {
+  background-image: url("../resources/on.png");
+  background-size: 65px 75px;
+  height: 75px;
+  left: 17px;
+  position: relative;
+  top: 15px;
+  width: 65px;
 }

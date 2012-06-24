@@ -28,6 +28,7 @@ function testFlashlightResources() {
     }
   }
   if (!testOk) {
+    flashlightAvailable = false;
     flashlightUnavailableMsgs.push(unavailableResourceMsg);
   }
 }
@@ -52,6 +53,12 @@ function flashlightButtonClick() {
   if (flashlightAvailable) {
     flashlightOn = !flashlightOn;
     showFlashlight();
+    powerIndicatorEl = document.getElementById("power-indicator");
+    if (powerIndicatorEl.className === "off") {
+      powerIndicatorEl.className = "on";
+    } else {
+      powerIndicatorEl.className = "off";
+    }
   } else {
     flashlightUnavailableMsg = flashlightUnavailableMsgs.join("\n");
     alert(flashlightUnavailableMsg);
